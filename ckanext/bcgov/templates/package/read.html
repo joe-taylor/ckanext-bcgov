@@ -126,6 +126,15 @@
     {% snippet "package/snippets/tags.html", tags=pkg.tags %}
   {% endblock %}
 
+  <section class="module">
+    <div class="module-content">
+      <div id="request-data">
+        <a href="#additional-information" class="btn btn-xs btn-primary">See Contact Info</a>
+        <p>Do you have questions/concerns about something on this page? See contact information.</p>
+      </div>
+    </div>
+  </section>
+
   {% set dataset_extent = c.pkg_dict['spatial'] or '' %}
   {% if dataset_extent %}
      {% snippet "package/snippets/dataset_extent.html", pkg=pkg %}
